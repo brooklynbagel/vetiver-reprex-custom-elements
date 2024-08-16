@@ -1,0 +1,5 @@
+ipykernel==6.29.5
+jupyter==1.0.0
+posit-sdk==0.4.0
+scikit-learn==1.5.1
+vetiver==0.2.5

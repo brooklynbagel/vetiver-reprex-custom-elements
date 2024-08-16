@@ -1,0 +1,5 @@
+.posit/
+.venv/
+model_files/
+rsconnect-python/
+.env
