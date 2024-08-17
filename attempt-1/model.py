@@ -53,9 +53,13 @@ board = board_rsconnect(allow_pickle_read=True)
 
 vetiver_pin_write(board=board, model=v)
 
+app_guid = os.getenv("APP_GUID")
+
 vetiver.deploy_rsconnect(
     connect_server=connect_server,
     board=board,
     pin_name=f"{username}/cars_pipeline",
-    extra_files=["requirements.txt"],
+    extra_files=["requirements.txt"], 
+    new=app_guid is None,
+    app_id=app_guid,
 )
